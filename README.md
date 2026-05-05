@@ -43,6 +43,19 @@ The goal is simple:
 
 ---
 
+### 🎟️ Guest Portal Access
+
+Guest Wi-Fi is tied to a centralized event portal where attendees can:
+
+- 🎟️ View show details (schedule, cast, seating information)  
+- 🍔 Pre-order concessions  
+- 🛍️ Browse merchandise (programs, apparel, etc.)  
+- 📢 Receive real-time announcements (delays, start times)  
+
+This allows guests to stay connected to event services while remaining fully isolated from internal production systems.
+
+---
+
 ## 🧩 Network Segmentation
 
 The environment is divided into functional VLANs:
