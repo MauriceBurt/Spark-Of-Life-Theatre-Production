@@ -18,7 +18,7 @@ A real-world network design demonstrating segmentation, controlled access, and s
 
 ## 📌 Overview
 
-This design represents a theatre production environment where multiple user groups require network access—without exposing critical systems.
+This design represents a temporary theatre production environment where an external company operates within a shared venue—requiring network access without exposing critical systems.
 
 The network supports:
 
@@ -43,11 +43,25 @@ The goal is simple:
 
 ---
 
+## 🏗️ Deployment Context
+
+Spark of Life Theatre Production is a traveling group operating within a rented venue.
+
+Because of this, the network must be:
+
+- Deployable without modifying existing infrastructure  
+- Segmented to prevent interference with venue systems  
+- Controlled to ensure reliable operation during live performances  
+
+This design reflects a temporary, self-contained network built to function independently within a shared environment.
+
+---
+
 ### 🎟️ Guest Portal Access
 
 Guest Wi-Fi is tied to a centralized event portal where attendees can:
 
-- 🎭 Show details (schedule, cast, seating info)
+- 🎟️ Show details (schedule, cast, seating info)
 - 🍔 Pre-order concessions for pickup (no POS integration needed)
 - 📍 Other tour locations / upcoming shows
 - 📢 Real-time announcements (delays, start times) 
