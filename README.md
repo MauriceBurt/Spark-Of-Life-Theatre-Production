@@ -47,10 +47,10 @@ The goal is simple:
 
 Guest Wi-Fi is tied to a centralized event portal where attendees can:
 
-- 🎟️ View show details (schedule, cast, seating information)  
-- 🍔 Pre-order concessions  
-- 🛍️ Browse merchandise (programs, apparel, etc.)  
-- 📢 Receive real-time announcements (delays, start times)  
+- 🎭 Show details (schedule, cast, seating info)
+- 🍔 Pre-order concessions for pickup (no POS integration needed)
+- 📍 Other tour locations / upcoming shows
+- 📢 Real-time announcements (delays, start times) 
 
 This allows guests to stay connected to event services while remaining fully isolated from internal production systems.
 
