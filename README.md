@@ -24,6 +24,7 @@ The network supports:
 
 - Guest Wi-Fi for audience members  
 - Staff control systems (lighting, sound, operations)  
+- Dedicated stage manager control device  
 - IoT production devices on stage  
 - A centralized server / portal  
 
@@ -47,6 +48,7 @@ The goal is simple:
 The environment is divided into functional VLANs:
 
 - **VLAN 10 — Staff Control**
+- **VLAN 20 — Stage Manager Control (Dedicated Device)**
 - **VLAN 30 — IoT Production (Stage)**
 - **VLAN 40 — Guest Wi-Fi (Seating Areas)**
 - **VLAN 50 — Server / Portal**
@@ -60,6 +62,18 @@ Each VLAN is isolated to prevent unnecessary access between environments.
 
 ### VLAN Segmentation
 Logical separation ensures guests, staff, and production systems do not overlap unnecessarily.
+
+---
+
+### Stage Manager Isolation (VLAN 20)
+
+A dedicated VLAN was created for the stage manager’s control device.
+
+- Uses a /30 subnet to strictly limit available addresses  
+- Provides controlled access to production systems  
+- Isolated from guest and IoT traffic  
+
+This ensures critical show operations remain stable and unaffected by general network activity.
 
 ---
 
@@ -106,6 +120,16 @@ A device attempts to connect to an unused wall port.
 - Access internal systems  
 - Communicate with required resources  
 - Maintain production control  
+
+---
+
+### 🎬 Stage Manager (VLAN 20)
+- Dedicated control device (tablet)  
+- Minimal subnet scope (/30)  
+- Direct access to required production systems only  
+- Isolated from guest traffic  
+
+Designed for reliability and precision during live operation.
 
 ---
 
